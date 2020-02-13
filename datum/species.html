@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;species - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/species.html#var">Var Details</a> - <a href="datum/species.html#proc">Proc Details</a></header>
+<main>
+<h1>/<a href="datum.html">datum</a>/<a href="datum/species.html">species</a>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L5">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 5"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/species.html#var/bodytemp_autorecovery_min">bodytemp_autorecovery_min</a></th><td>Minimum amount of kelvin moved toward normal body temperature per tick.</td></tr>
+            <tr><th><a href="datum/species.html#var/bodytemp_cold_damage_limit">bodytemp_cold_damage_limit</a></th><td>The body temperature limit the body can take before it starts taking damage from cold.</td></tr>
+            <tr><th><a href="datum/species.html#var/bodytemp_heat_damage_limit">bodytemp_heat_damage_limit</a></th><td>The body temperature limit the body can take before it starts taking damage from heat.</td></tr>
+            <tr><th><a href="datum/species.html#var/bodytemp_normal">bodytemp_normal</a></th><td>The natural temperature for a body</td></tr>
+            <tr><th><a href="datum/species.html#var/flying_species">flying_species</a></th><td>A path to an outfit that is important for species life e.g. plasmaman outfit</td></tr>
+            <tr><th><a href="datum/species.html#var/inherent_factions">inherent_factions</a></th><td>List of factions the mob gain upon gaining this species.</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/species.html#proc/give_important_for_life">give_important_for_life</a></th><td>Equip the outfit required for life. Replaces items currently worn.</td></tr>
+            <tr><th><a href="datum/species.html#proc/handle_body_temperature">handle_body_temperature</a></th><td>Handle the body temperature status effects for the species
+Traits for resitance to heat or cold are handled here.</td></tr>
+            <tr><th><a href="datum/species.html#proc/handle_environment">handle_environment</a></th><td>Enviroment handler for species</td></tr>
+            <tr><th><a href="datum/species.html#proc/handle_environment_pressure">handle_environment_pressure</a></th><td>Handle the air pressure of the environment</td></tr>
+            <tr><th><a href="datum/species.html#proc/harm">harm</a></th><td>This proc handles punching damage. IMPORTANT: Our owner is the TARGET and not the USER in this proc. For whatever reason...</td></tr>
+            <tr><th><a href="datum/species.html#proc/natural_bodytemperature_stabilization">natural_bodytemperature_stabilization</a></th><td>Used to stabilize the body temperature back to normal on living mobs</td></tr></table>
+    <h2><a name="var">Var Details</a></h2><h3><aside class="declaration">var </aside><a name="var/bodytemp_autorecovery_min">bodytemp_autorecovery_min</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L60">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 60"/></a></h3>
+        <p>Minimum amount of kelvin moved toward normal body temperature per tick.</p><h3><aside class="declaration">var </aside><a name="var/bodytemp_cold_damage_limit">bodytemp_cold_damage_limit</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L64">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 64"/></a></h3>
+        <p>The body temperature limit the body can take before it starts taking damage from cold.</p><h3><aside class="declaration">var </aside><a name="var/bodytemp_heat_damage_limit">bodytemp_heat_damage_limit</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L62">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 62"/></a></h3>
+        <p>The body temperature limit the body can take before it starts taking damage from heat.</p><h3><aside class="declaration">var </aside><a name="var/bodytemp_normal">bodytemp_normal</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L58">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 58"/></a></h3>
+        <p>The natural temperature for a body</p><h3><aside class="declaration">var </aside><a name="var/flying_species">flying_species</a>
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L53">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 53"/></a></h3>
+        <p>A path to an outfit that is important for species life e.g. plasmaman outfit</p><h3><aside class="declaration">var </aside><a name="var/inherent_factions">inherent_factions</a>
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L72">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 72"/></a></h3>
+        <p>List of factions the mob gain upon gaining this species.</p><h2><a name="proc">Proc Details</a></h2><h3><aside class="declaration">proc </aside><a name="proc/give_important_for_life">give_important_for_life</a><aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/human_to_equip) 
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L1021">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 1021"/></a></aside>
+        </h3>
+        <p>Equip the outfit required for life. Replaces items currently worn.</p><h3><aside class="declaration">proc </aside><a name="proc/handle_body_temperature">handle_body_temperature</a><aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/H) 
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L1640">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 1640"/></a></aside>
+        </h3>
+        <p>Handle the body temperature status effects for the species
+Traits for resitance to heat or cold are handled here.</p><h3><aside class="declaration">proc </aside><a name="proc/handle_environment">handle_environment</a><aside>(/<a href="datum.html">datum</a>/gas_mixture/environment, /<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/H) 
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L1629">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 1629"/></a></aside>
+        </h3>
+        <p>Enviroment handler for species</p>
+<p>vars:</p>
+<ul>
+<li>environment The environment gas mix</li>
+<li>H The mob we will stabilize</li>
+</ul><h3><aside class="declaration">proc </aside><a name="proc/handle_environment_pressure">handle_environment_pressure</a><aside>(/<a href="datum.html">datum</a>/gas_mixture/environment, /<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/H) 
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L1710">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 1710"/></a></aside>
+        </h3>
+        <p>Handle the air pressure of the environment</p><h3><aside class="declaration">proc </aside><a name="proc/harm">harm</a><aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/user, /<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/target, /<a href="datum.html">datum</a>/<a href="datum/martial_art.html">martial_art</a>/attacker_style) 
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L1212">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 1212"/></a></aside>
+        </h3>
+        <p>This proc handles punching damage. IMPORTANT: Our owner is the TARGET and not the USER in this proc. For whatever reason...</p><h3><aside class="declaration">proc </aside><a name="proc/natural_bodytemperature_stabilization">natural_bodytemperature_stabilization</a><aside>(/<a href="datum.html">datum</a>/gas_mixture/environment, /<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/H) 
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/40d3df8df9a3cdcea17abdf840b7de0e1884099a/code/modules/mob/living/carbon/human/species.dm#L1758">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;carbon&#x2F;human&#x2F;species.dm 1758"/></a></aside>
+        </h3>
+        <p>Used to stabilize the body temperature back to normal on living mobs</p>
+<p>vars:</p>
+<ul>
+<li>environment The environment gas mix</li>
+<li>H The mob we will stabilize</li>
+</ul></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/tgstation/tgstation/tree/40d3df8df9a3cdcea17abdf840b7de0e1884099a">40d3df8</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.1.1</a></footer>
+</body>
+</html>
