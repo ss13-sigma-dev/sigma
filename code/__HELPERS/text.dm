@@ -265,11 +265,10 @@
 	return trim_left(trim_right(text))
 
 //Returns a string with the first element of the string capitalized.
+//SIGMA: updated to work... in cases it doesnt work
 /proc/capitalize(t)
-	. = t
 	if(t)
-		. = t[1]
-		return uppertext(.) + copytext(t, 1 + length(.))
+		return uppertext(copytext_char(t, 1, 2)) + copytext_char(t, 2)
 
 /proc/stringmerge(text,compare,replace = "*")
 //This proc fills in all spaces with the "replace" var (* by default) with whatever
