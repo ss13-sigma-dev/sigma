@@ -464,7 +464,7 @@
 	min_val = 0
 
 /datum/config_entry/string/default_view
-	config_entry_value = "15x15"
+	config_entry_value = "19x15"
 
 /datum/config_entry/string/default_view_square
 	config_entry_value = "15x15"
