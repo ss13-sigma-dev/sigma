@@ -239,6 +239,9 @@ SUBSYSTEM_DEF(shuttle)
 	if(call_reason)
 		SSblackbox.record_feedback("text", "shuttle_reason", 1, "[call_reason]")
 		log_shuttle("Shuttle call reason: [call_reason]")
+		webhook_send_roundstatus("shuttle called", list("reason" = call_reason, "seclevel" = get_security_level()))
+	else
+		webhook_send_roundstatus("shuttle called", list("reason" = "none", "seclevel" = get_security_level()))
 	message_admins("[ADMIN_LOOKUPFLW(user)] has called the shuttle. (<A HREF='?_src_=holder;[HrefToken()];trigger_centcom_recall=1'>TRIGGER CENTCOM RECALL</A>)")
 
 /datum/controller/subsystem/shuttle/proc/centcom_recall(old_timer, admiral_message)
