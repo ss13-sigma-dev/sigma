@@ -1,8 +1,10 @@
 name: Compile changelogs
 
 on:
+  label:
+    types: [created]
   schedule:
-  - cron: "40 14 * * *"
+  - cron: "0 0 * * *"
 
 jobs:
   compile:
