@@ -27,12 +27,12 @@ jobs:
       - name: Commit
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "Changelogs"
+          git config --local user.name "Чейнджлоги"
           git pull origin master
-          git commit -m "Automatic changelog compile [ci skip]" -a || true
+          git commit -m "Автоматическая компиляция чейнджлога [ci skip]" -a || true
       - name: "Push"
         uses: ad-m/github-push-action@master
         env:
-          GITHUB_ACTOR: comfyorange
+          GITHUB_ACTOR: archemagus
         with:
-          github_token: ${{ secrets.GITHUB_MASTER_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
