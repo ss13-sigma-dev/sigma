@@ -1,8 +1,6 @@
 name: Compile changelogs
 
 on:
-  label:
-    types: [created]
   schedule:
   - cron: "0 0 * * *"
 
