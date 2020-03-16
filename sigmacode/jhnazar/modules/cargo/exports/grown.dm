@@ -1,4 +1,4 @@
-/datum/export/grown/ambrosiavulgaris
+/datum/export/grown/ambrosiavulgaris 	//Does not working. Need Fix
 	cost = 5
 	unit_name = "Ambrosia Vulgaris"
 	export_types = list(/obj/item/reagent_containers/food/snacks/grown/ambrosia)
@@ -41,7 +41,7 @@
 /datum/export/grown/soybeans
 	cost = 5
 	unit_name = "Soybeans"
-	export_types = list(obj/item/reagent_containers/food/snacks/grown/soybeans)
+	export_types = list(/obj/item/reagent_containers/food/snacks/grown/soybeans)
 
 /datum/export/grown/koibean
 	cost = 20
