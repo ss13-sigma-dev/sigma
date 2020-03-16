@@ -3022,4 +3022,6 @@
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
 #include "sigmacode\webhook.dm"
+#include "sigmacode\jhnazar\modules\cargo\exports\grown.dm"
+#include "sigmacode\jhnazar\modules\research\designs\biogenerator_designs.dm"
 // END_INCLUDE

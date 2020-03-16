@@ -1,4 +1,8 @@
-/datum/export/grown/ambrosiavulgaris 	//Does not working. Need Fix
+/datum/export/grown/
+	k_elasticity = 0
+	include_subtypes = FALSE
+
+/datum/export/grown/ambrosiavulgaris
 	cost = 5
 	unit_name = "Ambrosia Vulgaris"
 	export_types = list(/obj/item/reagent_containers/food/snacks/grown/ambrosia)
