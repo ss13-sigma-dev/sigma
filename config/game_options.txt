@@ -32,8 +32,10 @@ EMOJIS
 ## To speed things up make the number negative, to slow things down, make the number positive.
 
 ## These modify the run/walk speed of all mobs before the mob-specific modifiers are applied.
-RUN_DELAY 1
-WALK_DELAY 4
+RUN_DELAY 2
+# 1
+WALK_DELAY 5
+# 4
 
 ## The variables below affect the movement of specific mob types. THIS AFFECTS ALL SUBTYPES OF THE TYPE YOU CHOOSE!
 ## Entries completely override all subtypes. Later entries have precedence over earlier entries.
@@ -55,18 +57,18 @@ MULTIPLICATIVE_MOVESPEED /mob/living/simple_animal 1
 #FORCE_RANDOM_NAMES
 
 ## Unhash this to turn on automatic reopening of a player's job if they suicide at roundstart
-#REOPEN_ROUNDSTART_SUICIDE_ROLES
+REOPEN_ROUNDSTART_SUICIDE_ROLES
 
 ## Unhash to enable reopening of command level positions
-#REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
+REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
 
 ## Define the delay for roles to be reopened after the round starts in seconds.
 ## Has a minimum delay of 30 seconds, though it's suggested to keep over 1 min
 ## If undefined, the delay defaults to 4 minutes.
-#REOPEN_ROUNDSTART_SUICIDE_ROLES_DELAY 240
+REOPEN_ROUNDSTART_SUICIDE_ROLES_DELAY 240
 
 ## Unhash to enable a printed command report for reopened roles listing what roles were reopened.
-#REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_REPORT
+REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_REPORT
 
 
 ## ALERT LEVELS ###
@@ -235,7 +237,7 @@ ALLOW_LATEJOIN_ANTAGONISTS
 ## roll antagonist in subsequent rounds until they get it.
 ##
 ## For details See the comments for /datum/game_mode/proc/antag_pick in code/game/gamemodes/game_mode.dm
-# USE_ANTAG_REP
+USE_ANTAG_REP
 
 ## The maximum amount of antagonist reputation tickets a player can bank (not use at once)
 ANTAG_REP_MAXIMUM 200
@@ -248,9 +250,6 @@ MAX_TICKETS_PER_ROLL 100
 
 ## Uncomment to allow players to see the set odds of different rounds in secret/random in the get server revision screen. This will NOT tell the current roundtype.
 #SHOW_GAME_TYPE_ODDS
-
-## Uncomment to prevent the nuclear operative leader from getting the war declaration item
-#DISABLE_WAROPS
 
 ## Uncomment to enable dynamic ruleset config file.
 DYNAMIC_CONFIG_ENABLED
@@ -542,7 +541,7 @@ ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 MICE_ROUNDSTART 10
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
-#EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
+EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
 
 ## Determines if players are allowed to print integrated circuits, uncomment to allow.
 #IC_PRINTING
@@ -568,9 +567,6 @@ MONKEYCAP 64
 
 ## A cap on how many mice can be bred via cheese wedges
 RATCAP 64
-
-## Maximum fine for a citation
-MAXFINE 2000
 
 ## Enable the capitalist agenda on your server.
 ECONOMY
