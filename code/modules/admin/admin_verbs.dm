@@ -74,7 +74,11 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/client/proc/toggleadminhelpsound,
 	/client/proc/respawn_character,
 	/client/proc/discord_id_manipulation,
-	/datum/admins/proc/open_borgopanel
+	/datum/admins/proc/open_borgopanel,
+	//SIGMAs procs
+	/datum/admins/proc/togglelooc,
+	/datum/admins/proc/toggleloocdead
+	//end of SIGMAs procs
 	)
 GLOBAL_LIST_INIT(admin_verbs_ban, list(/client/proc/unban_panel, /client/proc/ban_panel, /client/proc/stickybanpanel))
 GLOBAL_PROTECT(admin_verbs_ban)
