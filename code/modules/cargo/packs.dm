@@ -2535,6 +2535,7 @@
 		/obj/item/circuitboard/machine/ltsrbt,
 		/obj/item/stack/ore/bluespace_crystal/artificial,
 		/obj/item/stack/ore/bluespace_crystal/artificial,
-		/obj/item/stock_parts/subspace/ansible
+		/obj/item/stock_parts/subspace/ansible,
+		/obj/item/stock_parts/subspace/amplifier
 	)
 	crate_name = "crate"

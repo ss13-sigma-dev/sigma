@@ -17,17 +17,18 @@
 	item = /obj/item/storage/box/donkpockets
 
 	stock_min = 1
-	stock_max = 10
+	stock_max = 20
+
 	price_min = 325
 	price_max = 400
 	availability_prob = 100
 	
-	/datum/blackmarket_item/consumable/donkpockets/spawn_item(loc)
+
+	/datum/blackmarket_item/consumable/donk_pocket_box/spawn_item(loc)
 		var/donkpockets = pick(list(/obj/item/storage/box/donkpockets,
 				/obj/item/storage/box/donkpockets/donkpocketspicy,
 				/obj/item/storage/box/donkpockets/donkpocketteriyaki,
 				/obj/item/storage/box/donkpockets/donkpocketpizza,
-				/obj/item/storage/box/donkpockets/donkpocketgondola,
 				/obj/item/storage/box/donkpockets/donkpocketberry,
 				/obj/item/storage/box/donkpockets/donkpockethonk))
 		return new donkpockets(loc)
